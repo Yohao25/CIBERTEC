@@ -1,0 +1,12 @@
+img.transformacion {
+  border: blue 1px solid;
+  width: 137px;
+  height: 180px;
+  /* Chrome / Safari */
+  -webkit-transition: all 1000ms ease-in-out;
+  /* Default */
+  transition: all 100ms ease-in-out;
+}
+img.transformacion:hover {
+ transform: scale(1.5, 1.5);
+}

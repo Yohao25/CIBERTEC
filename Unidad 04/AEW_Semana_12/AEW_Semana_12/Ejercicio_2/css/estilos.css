@@ -1,0 +1,25 @@
+img.transition{
+    border: blue 1px solid;
+    width: 137 px;
+    height: 180 px;
+/* Firefox */
+-moz-transition-property: all;
+-moz-transition-duration: 1000ms;
+-moz-transition-timing-function: ease;
+-moz-transition-delay: 100ms;
+/* Chrome / Safari */
+-webkit-transition-property: all;
+-webkit-transition-duration: 1000ms;
+-webkit-transition-timing-function: ease;
+-webkit-transition-delay: 100ms;
+/* Default */
+-o-transition-property: all;
+-o-transition-duration: 1000ms;
+-o-transition-timing-function: ease;
+-o-transition-delay: 100ms;
+}
+img.transicion:hover {
+    border: red 2px solid;
+    width: 274px;
+    height: 360px;
+}

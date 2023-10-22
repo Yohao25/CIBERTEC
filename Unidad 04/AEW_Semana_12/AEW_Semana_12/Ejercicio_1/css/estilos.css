@@ -1,0 +1,16 @@
+p.animacion {
+font-size: 15px;
+color: blue;
+background-color: aqua;
+text-align: center;
+width: 500px;
+height: auto;
+  /* Chrome / Safari */
+-webkit-transition: font-size 1000ms linear 0s;
+  /* Default */
+transition: font-size 1000ms linear 0s;
+}
+p.animacion:hover {
+font-size: 30px;
+color: red;
+}

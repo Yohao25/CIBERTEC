@@ -101,3 +101,62 @@ footer p {
 	margin-bottom: 10px;
 	color: white;
 }
+.rotacionY {
+  transform: rotateY(0deg);
+  transition: all ease 2500ms;
+}
+.rotacionY:hover {
+  transform: rotateY(360deg);
+  transition: all ease 5000ms;
+}
+.rotacionX {
+  transform: rotateX(0deg);
+  transition: all ease 2500ms;
+}
+.rotacionX:hover {
+  transform: rotateX(368deg);
+  transition: all ease 5000ms;
+}
+img.transformacion {
+  border: blue 1px solid;
+
+  /* Chrome / Safari */
+  -webkit-transition: all 1000ms ease-in-out;
+  /* Default */
+  transition: all 100ms ease-in-out;
+}
+img.transformacion:hover {
+ transform: scale(1.5, 1.5);
+}
+img.transition{
+	border: blue 1px solid;
+
+/* Chrome / Safari */
+-webkit-transition-property: all;
+-webkit-transition-duration: 1000ms;
+-webkit-transition-timing-function: ease;
+-webkit-transition-delay: 100ms;
+/* Default */
+-o-transition-property: all;
+-o-transition-duration: 1000ms;
+-o-transition-timing-function: ease;
+-o-transition-delay: 100ms;
+}
+img.transicion:hover {
+    border: red 2px solid; 
+	}
+	p.animacion {
+		font-size: 15px;
+		color: blue;
+		background-color: aqua;
+		text-align: center;
+		height: auto;
+			/* Chrome / Safari */
+		-webkit-transition: font-size 1000ms linear 0s;
+			/* Default */
+		transition: font-size 1000ms linear 0s;
+		}
+		p.animacion:hover {
+		font-size: 30px;
+		color: red;
+		}

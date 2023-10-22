@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+}
+img {
+  width: 137px;
+  height: 180px;
+}
+.rotacionY {
+  transform: rotateY(0deg);
+  transition: all ease 2500ms;
+}
+.rotacionY:hover {
+  transform: rotateY(360deg);
+  transition: all ease 5000ms;
+}
+.rotacionX {
+  transform: rotateX(0deg);
+  transition: all ease 2500ms;
+}
+.rotacionX:hover {
+  transform: rotateX(368deg);
+  transition: all ease 5000ms;
+}
