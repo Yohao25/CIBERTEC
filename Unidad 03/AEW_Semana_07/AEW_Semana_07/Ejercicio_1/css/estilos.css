@@ -1,0 +1,31 @@
+html {
+  border: 2px;
+  border-color: yellow;
+  border-style:solid ;
+}
+body {
+  margin: 5px;
+  border: 2px;
+  border-color: blue;
+  border-style: solid;
+  padding: 10px;
+}
+img {
+  margin: 15px;
+  border: 2px;
+  border-color: orange;
+  border-style: solid;
+  border-radius: 50px;
+}
+p {
+  border: 2px;
+  border-color: red;
+  border-style: solid;
+  padding: 10px;
+  text-align: justify;
+}
+* {
+  border: 2px;
+  border-color: green;
+  border-style: solid;
+}

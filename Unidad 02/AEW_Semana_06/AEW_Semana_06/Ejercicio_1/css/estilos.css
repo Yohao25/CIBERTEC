@@ -1,0 +1,25 @@
+body {
+  background-color: azure;
+}
+h1 {
+  text-align: center;
+  color: darkblue;
+}
+h2 {
+  text-align: center;
+  color: darkblue;
+}
+img {
+  width: 100%;
+}
+div img {
+  width: 20%;
+}
+p {
+  text-align: justify;
+  font-size: 13pt;
+}
+a {
+  font-size: 18pt;
+  color: red;
+}

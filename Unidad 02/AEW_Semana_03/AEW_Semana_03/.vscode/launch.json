@@ -1,0 +1,15 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Open ejemplo.html",
+      "url": "http://localhost:8080",
+      "file": "d:\\PC\\Documents\\Cibertec Yohao\\Arquitectura de Entornos Web\\Unidad 03\\AEW_Semana_03\\AEW_Semana_03\\paginas\\ejemplo.html"
+    }
+  ]
+}

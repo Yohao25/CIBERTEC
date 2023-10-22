@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  border: 0;
+}
+body {
+  background-color: chocolate;
+}
+#contenedor {
+  width: 95%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+div h1{
+  text-align: center;
+  width: 95%;
+  color: chocolate;
+}
+header {
+  background-color: beige;
+  width: 100%;
+}
+header img {
+  width: 100%;
+  vertical-align: bottom;
+}
+nav {
+  background-color: gold;
+}
+nav a {
+  padding: 10px;
+  color: red;
+  text-decoration: none;
+  display: inline-block;
+}
+main {
+  background-color: beige;
+  width: 100%;
+  display: flex;
+}
+section {
+  width: 100%;;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+aside {
+  width: 0%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+aside h2 li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: left;
+}
+aside h2{
+  text-align: left;
+  color: blue;
+}
+aside img {
+  width: 60%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+aside.izquierda {
+  width: 25%;
+}
+aside.derecha {
+  width: 25%;
+  text-align: justify;
+}
+aside img {
+  width: 40%;
+}
+section {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: white;
+  color: green;
+  text-align: center;
+}
+section figure {
+  width: 50%;
+  margin-top: 10px;
+}
+section img {
+  width: 80%;
+}
+section figure figcaption {
+  margin: 10px;
+  text-align: center;
+}
+footer {
+  background-color: green;
+  text-align: center;
+  color: white;
+}
