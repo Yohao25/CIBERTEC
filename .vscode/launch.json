@@ -1,0 +1,15 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Open basico .html",
+      "file": "c:\\Users\\lolii\\OneDrive\\Documentos\\Cruso Yohao\\AEW\\Unidad 05\\AEW_Semana_13\\AEW_Semana_13\\Prueba\\paginas\\basico .html"
+    }
+  ]
+}
