@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  border: 0;
+}
+header {
+  width: 95%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  border: 1px solid;
+  padding: 10px;
+  background-color: rgb(255, 196, 4);
+  justify-content: space-around;
+}
+.imagen1 {
+  width: 5%;
+}
+.imagen2 {
+  width: 40%;
+}
+.imagen-debajo1 {
+  width: 10%;
+}
+.imagen-debajo2 {
+  width: 100%;
+}
+main {
+  display: inline-flex;
+}
+main p {
+  background-color: rgb(29, 16, 16);
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+aside.izquierda {
+  width: 50%;
+}
+aside.derecha {
+  width: 50%;
+}
+.carrusel {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.imagen {
+  float: left;
+  width: 100%;
+}
+img {
+  width: 100%;
+}
+.descripcion {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav {
+  padding: 10px;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Utilizamos flexbox para alinear los elementos en la misma línea */
+  justify-content: center; /* Centramos los elementos horizontalmente */
+}
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+}
