@@ -1,0 +1,29 @@
+package vistas;
+
+public class Vista2 {
+
+	public static void main(String[] args) {
+		/// CALCULO DEL AREA Y PERIMETRO DE UN RECTANGULO
+		
+		//1. Declaración variables
+		double base;
+		double area;
+		double altura;
+		double perimetro
+		
+		//2. Entrada de datos
+		radio=8;
+		altura=9;		
+		
+		//3. Proceso
+		area=base*altura;
+		perimetro=2*(base+altura);
+		
+		//4. Salida de datos
+		System.out.println(area);
+		System.out.println(perimetro);
+		
+
+	}
+
+}

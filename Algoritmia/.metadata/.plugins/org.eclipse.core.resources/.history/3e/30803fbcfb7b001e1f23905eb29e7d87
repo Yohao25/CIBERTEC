@@ -1,0 +1,20 @@
+package vistas;
+
+public class Vista3 {
+
+	public static void main(String[] args) {
+		//1. Declaración variables
+		double vol,rad,alt,pi;
+		
+		//2. Entrada de datos
+		alt=5;
+		pi=3.14;
+		rad=10;
+		//3. Proceso
+		multiplicación=pi*rad*rad*vol;
+		//4. Salida de datos
+		System.out.println(vol);		
+				
+	}
+
+}

@@ -1,0 +1,25 @@
+package vistas;
+
+public class Vista3 {
+
+	public static void main(String[] args) {
+		//1. Declaración variables
+		double are,vol,rad,alt;
+		
+		//2. Entrada de datos
+		alt=5;
+		rad=10;
+		//3. Proceso
+		vol=3.14*rad*rad*alt;
+		are=2*3.14*rad(rad+alt);
+		//4. Salida de datos
+		System.out.println("---------------------------------");
+		System.out.println("EL AREA Y VOLUMEN DE UN CILINDRO");
+		System.out.println("---------------------------------");
+		System.out.println("El area del cilindro es      :"+are);
+		System.out.println("El volumen del cilindro es   :"+vol);
+		System.out.println("---------------------------------");
+				
+	}
+
+}
