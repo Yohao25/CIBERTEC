@@ -1,0 +1,113 @@
+package vistas;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.SwingConstants;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
+public class Gui2 extends JFrame {
+
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+	private JTextField txtradio;
+	private JTextField txtaltura;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Gui2 frame = new Gui2();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Gui2() {
+		setTitle("CILINDRO-ABELNAVARRO");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 393, 340);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lbladio = new JLabel("Radio");
+		lbladio.setBounds(34, 34, 32, 13);
+		contentPane.add(lbladio);
+		
+		txtradio = new JTextField();
+		txtradio.setBounds(123, 31, 86, 20);
+		contentPane.add(txtradio);
+		txtradio.setColumns(10);
+		
+		JLabel lblaltura = new JLabel("Altura");
+		lblaltura.setBounds(34, 80, 46, 14);
+		contentPane.add(lblaltura);
+		
+		txtaltura = new JTextField();
+		txtaltura.setBounds(123, 78, 86, 20);
+		contentPane.add(txtaltura);
+		txtaltura.setColumns(10);
+		
+		
+		JScrollPane scpresultado = new JScrollPane();
+		scpresultado.setBounds(34, 143, 290, 150);
+		contentPane.add(scpresultado);
+		
+		JTextArea txtresultado = new JTextArea();
+		scpresultado.setViewportView(txtresultado);
+		
+		JButton btnprocesar = new JButton("Procesar");
+		btnprocesar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//Declaración de variables
+				double rad, alt, al, at, ab, vol;
+				
+				//Entrada
+				rad=Double.parseDouble(txtradio.getText());
+				alt=Double.parseDouble(txtaltura.getText());
+						
+				//Proceso
+				ab=Math.PI*rad*rad;
+				al=2*Math.PI*rad*alt;
+				at=2*ab+al;
+				vol=Math.PI*rad*rad*alt;
+				
+				//Salida
+				txtresultado.setText("------------------------------------------------\n");
+				txtresultado.append("ÁREA LATERAL, ÁREA TOTAL, ÁREA BASE, VOLUMEN\n");
+				txtresultado.append("-------------------------------------------------\n");
+				txtresultado.append("Area de la base    :"+ab+"\n");
+				txtresultado.append("Area lateral       :"+al+"\n");
+				txtresultado.append("Area total         :"+at+"\n");
+				txtresultado.append("Volumen            :"+vol+"\n");
+				
+			}
+		});
+		btnprocesar.setBounds(280, 29, 89, 23);
+		contentPane.add(btnprocesar);
+		
+		JButton btnborrar = new JButton("Borrar");
+		btnborrar.setBounds(280, 76, 89, 23);
+		contentPane.add(btnborrar);
+	}
+}

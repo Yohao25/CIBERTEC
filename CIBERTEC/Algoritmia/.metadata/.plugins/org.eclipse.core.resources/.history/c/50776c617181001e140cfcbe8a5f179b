@@ -1,0 +1,86 @@
+package vistas;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.SwingConstants;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
+public class Gui2 extends JFrame {
+
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+	private JTextField txtradio;
+	private JTextField txtaltura;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Gui2 frame = new Gui2();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Gui2() {
+		setTitle("CILINDRO-ABELNAVARRO");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 393, 340);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lbladio = new JLabel("Radio");
+		lbladio.setBounds(24, 13, 32, 13);
+		contentPane.add(lbladio);
+		
+		txtradio = new JTextField();
+		txtradio.setBounds(97, 10, 96, 19);
+		contentPane.add(txtradio);
+		txtradio.setColumns(10);
+		
+		JLabel lblaltura = new JLabel("Altura");
+		lblaltura.setBounds(24, 71, 45, 13);
+		contentPane.add(lblaltura);
+		
+		txtaltura = new JTextField();
+		txtaltura.setBounds(97, 68, 96, 19);
+		contentPane.add(txtaltura);
+		txtaltura.setColumns(10);
+		
+		JButton btnprocesar = new JButton("Procesar");
+		btnprocesar.setBounds(244, 9, 85, 21);
+		contentPane.add(btnprocesar);
+		
+		JButton btnborrar = new JButton("Borrar");
+		btnborrar.setBounds(244, 67, 85, 21);
+		contentPane.add(btnborrar);
+		
+		JScrollPane scpresultado = new JScrollPane();
+		scpresultado.setBounds(24, 141, 305, 139);
+		contentPane.add(scpresultado);
+		
+		JTextArea txtresultado = new JTextArea();
+		scpresultado.setViewportView(txtresultado);
+	}
+}
