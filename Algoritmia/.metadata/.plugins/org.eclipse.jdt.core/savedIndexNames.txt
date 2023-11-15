@@ -1,7 +1,0 @@
-INDEX VERSION 1.134+D:\lolii\Documentos\CrusoYohao\Algoritmia\.metadata\.plugins\org.eclipse.jdt.core
-536848169.index
-1865797976.index
-2264331923.index
-1872057254.index
-3413270776.index
-4059153925.index
