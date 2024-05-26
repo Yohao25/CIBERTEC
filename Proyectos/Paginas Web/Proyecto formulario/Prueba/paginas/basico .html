@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario básico</title>
+    <link rel="stylesheet" href="../css/basico.css">
+    <script>
+        /*  var nombre = "Yohao";*/
+        /*alert("Hola mundo, Bienvenido " + nombre );*/
+        var numero1 = 5;
+        var numero2 = 3;
+        alert
+    </script>
+</head>
+
+<body>
+    <form action="" method="post" class="formulario">
+    <div class="form-group">
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Corre electrónico </label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="contrasena">Contraseña </label>
+        <input type="password" id="contrasena" name="contrasena" required>
+    </div>
+    <div class="form-group">
+        <label for="genero">Género </label>
+        <div class="radio-group">
+            <input type="radio" id="genero-masculino" name="genero" value="masculino">
+            <label for="genero-masculino">Masculino</label>
+            <input type="radio" id="genero-fenemenino" name="genero" value="femenino">
+            <label for="genero-femenino">Masculino</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="">Intereses:</label>
+        <div class="checkbot-group">
+            <input type="checkbox" name="intereses" id="interes-deporte" value="deporte">
+            <label for="interes-deporte">Deporte</label>
+            <input type="checkbox" name="intereses" id="interes-musica" value="musica">
+            <label for="interes-musica">Música</label>
+            <input type="checkbox" name="intereses" id="interes-arte" value="arte">
+            <label for="interes-arte">Arte</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" rows="4"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="foto">Foto de perfil:</label>
+        <input type="file" id="foto" name="foto">
+    </div>
+    <button type="submit">Enviar</button>
+</form>
+</body>
+
+</html>

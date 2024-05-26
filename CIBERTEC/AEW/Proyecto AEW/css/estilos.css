@@ -79,3 +79,19 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
 }
+.menu-item:hover {
+  background-color: #ddd; /* Cambia esto por el color deseado */
+}
+.menu-item.active {
+  background-color: #bbb; /* Color cuando está activo */
+}
+
+/* Para el carrusel de imágenes */
+.carrusel img {
+  width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible */
+  height: auto; /* Mantiene la proporción de aspecto */
+}
+/* Agrega esto a tu archivo CSS o dentro de la etiqueta <style> */
+.carrusel.imagen1.activo {
+  display: block; /* O cualquier otro estilo que desees aplicar al elemento activo */
+}

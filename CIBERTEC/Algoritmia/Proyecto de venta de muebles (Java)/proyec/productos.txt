@@ -1,0 +1,30 @@
+5001
+Mesa de vidrio
+moderno
+820.3
+3
+5002
+Mesa de Madera
+clasico
+790.5
+1
+5003
+Mesa de Plastico
+estetico
+820.7
+0
+5004
+Mesa de porcelana
+tecnologico
+470.2
+1
+5005
+Mesa de melamine
+melamine
+500.00
+1
+5006
+Mesa de metal
+metal
+900.00
+1
